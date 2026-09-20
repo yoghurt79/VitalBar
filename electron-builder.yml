@@ -1,0 +1,17 @@
+appId: com.vitalbar.desktop
+productName: 元气条
+directories:
+  output: release
+files:
+  - out/**/*
+  - package.json
+extraResources:
+  - from: assets
+    to: assets
+asar: true
+win:
+  target:
+    - portable
+  icon: assets/icon.ico
+portable:
+  artifactName: 元气条-Web-${version}.exe
